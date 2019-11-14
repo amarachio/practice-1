@@ -1,27 +1,32 @@
 *,html,body{
 
-background-color: #BBCCDD;
-color: #34414e;
+background-color: black;
+color: #cb416b;
 
 }
-nav ul{list-style-type:none;
+nav ul{position: absolute;
+  list-style-type:none;
   margin:0 !important;
   padding:0 !important;
   box-sizing: border-box !important;
   position: fixed;
+  z-index: 1000;
+
 
 }
 nav li{display:inline;
     float:right;
-  top:0px;}
-nav a:link, nav a:visited{background-color: #dee1e9;
-    color:white;
+  top:0px;
+
+ }
+nav a:link, nav a:visited{background-color: #cb416b;
+
     display:block;
     width:290px;
     height: 40px;
     text-align:center;
     padding:10px 10px;
-    box-shadow: 3px 8px 10px #34414e;
+
 
   text-decoration: none;
 font-size: 30px;
@@ -29,16 +34,64 @@ font-family: 'Raleway', sans-serif;
 font-weight: 600;
 margin-top: 0px;
 margin-left: 0px;
-color: #636c77;}
+color:white;}
 body{margin: 0px 50px 15px 50px;
 text-align: center;
 font-family: 'Roboto', sans-serif;
 font-size: 25px;}
 
-img{width: 700px;
-height: 450px;
+
+nav a:hover{
+  font-size: 40px;
+}
+
+.div-flex{display: flex;
+border: 0px, 10px, 0px, 10px;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;}
+
+.bus{background-image: image(melonpic.png);
+  background-size:     cover;
+     background-repeat:   no-repeat ;
+   }
+
+.top-div{
+  display: flex;
+  width: 624.5px;
+  height: auto;
+
+}
+
+.cover-div { padding: 10px 130px 10px 130px;
+  margin: 20px;
+  border-width: medium;
+border-color: white;
+border-radius: 10px;
+/*background-color: #A9A9A9;
+background-image: url(https://s-media-cache-ak0.pinimg.com/originals/f7/e6/00/f7e600f46cc44613febc80478cd6875a.jpg);
+*/}
+.img-div{
+
+  width: 350px;
+height: 400px;
 border-radius: 13px;
-box-shadow: 3px 8px 10px #34414e}
+overflow: hidden;
+position: inherit;
+
+}
+
+.img-div img{transition: transform .5s ease;}
+
+.img-div:hover img{transform: scale(1.32);
+opacity: 1.0;}
+
+img{width: 350px;
+height: 250px;
+border-radius: 13px;
+top: 50px;
+opacity: 0.6;
+/*box-shadow: 3px 8px 10px #34414e*/}
 h1{font-weight: lighter;
 font-size: #3d4c51;
 font-family: 'Modak', cursive;
@@ -47,8 +100,7 @@ color: #cb416b;}
 h2{font-weight: 500;
 font-size: 60px;}
 h4{color: #2a4041;}
-/* .chow{background-color: white;
-  width: auto;
-  height: auto;} */
+/*h4 :hover{ font-weight: bolder;
+}*/
 footer>a>img{width: 35px;
 height: 30px;}
