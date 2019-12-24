@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<script src="chow.js" charset="utf-8"></script>
+<script src="chow.js" charset="utf-8" defer></script>
   </head>
   <body>
 <div id="header">
@@ -18,7 +18,7 @@
       <li><a href="#">Survey</a></li>
       <li><a href="#Lunch">Lunch meals</a></li>
       <li><a href="#Breakfasts">Breakfasts</a></li>
-      <li><a  href="#">Cart $<i id="cart-price">0</i></a></li>
+      <li><a  href="#">Cart $<i class="bbb" id="cart-price">0</i></a></li>
     </ul>
     </nav>
 
@@ -41,7 +41,7 @@
 <div class="img-div">
 <img src="tea.jpg" alt="" >
 </div>
-<h4 id="fff">Chinese tea $<i>2</i></h4>
+<h4 class="price-2">Chinese tea $<i>2</i></h4>
 </div>
 </div>
 </a>
@@ -52,7 +52,7 @@
 <img src="pegg.jpg" alt="" >
 <button type="button" name="button">Add to cart</button>
 </div>
-<h4>Plantains and egg $<i>10</i></h4>
+<h4 class="price-10" >Plantains and egg $<i>10</i></h4>
 </div>
 </div>
 </a>
@@ -62,7 +62,7 @@
   <div class="img-div">
 <img src="pancakes.jpg" alt="" >
 </div>
-<h4>Pancakes $<i>5</i></h4>
+<h4 class="price-5">Pancakes $<i>5</i></h4>
 </div>
 </div>
 </a>
@@ -72,7 +72,7 @@
   <div class="img-div">
 <img src="oats.jpg" alt="" >
 </div>
-<h4>Bowl of oats $<i>1</i></h4>
+<h4 class="price-1">Bowl of oats $<i>1</i></h4>
 </div>
 </div>
 </a>
@@ -82,7 +82,7 @@
   <div class="img-div">
 <img src="toast.jpg" alt="" >
 </div>
-<h4>Slices of toast $<i>5</i></h4>
+<h4 class="price-5">Slices of toast $<i>5</i></h4>
 </div>
 </div>
 </a>
@@ -92,7 +92,7 @@
   <div class="img-div">
 <img src="yegg.jpg" alt="" >
 </div>
-<h4>Yam and egg $<i>7</i></h4>
+<h4 class="price-7">Yam and egg $<i>7</i></h4>
 </div>
 </div>
 </a>
@@ -102,7 +102,7 @@
 <div class="img-div">
 <img src="noodles.jpg" alt="" >
 </div>
-<h4>Bowl of noodles $<i>10</i></h4>
+<h4 class="price-10">Bowl of noodles $<i>10</i></h4>
 </div>
 </div>
 </a>
@@ -112,7 +112,7 @@
   <div class="img-div">
 <img src="agege.jpeg" alt="" >
 </div>
-<h4>Agege special $<i>2</i></h4>
+<h4 class="price-2">Agege special $<i>2</i></h4>
 </div>
 </div>
 </a>
@@ -129,7 +129,7 @@
   <div class="img-div">
 <img src="eforiro.jpg" alt="" >
 </div>
-<h4>Eforiro meal $<i>18</i></h4>
+<h4 class="price-18">Eforiro meal $<i>18</i></h4>
 </div>
 </div>
 </a>
@@ -139,7 +139,7 @@
   <div class="img-div">
 <img src="egusi.jpg" alt="" >
 </div>
-<h4>Egusi meal $<i>16</i></h4>
+<h4 class="price-16">Egusi meal $<i>16</i></h4>
 </div>
 </div>
 </a>
@@ -149,7 +149,7 @@
   <div class="img-div">
 <img src="jollof.jpg" alt="" >
 </div>
-<h4>Jollof meal $<i>15</i></h4>
+<h4 class="price-15">Jollof meal $<i>15</i></h4>
 </div>
 </div>
 </a>
@@ -159,7 +159,7 @@
   <div class="img-div">
 <img src="Ofada.jpg" alt="" >
 </div>
-<h4>Ofada combo $<i>10</i></h4>
+<h4 class="price-10">Ofada combo $<i>10</i></h4>
 </div>
 </div>
 </a>
@@ -169,7 +169,7 @@
   <div class="img-div">
 <img src="spag.jpg" alt="" >
 </div>
-<h4>Bowl of spag $<i>10</i></h4>
+<h4 class="price-10">Bowl of spag $<i>10</i></h4>
 </div>
 </div>
 </a>
@@ -179,7 +179,7 @@
   <div class="img-div">
 <img src="abacha.jpg" alt="" >
 </div>
-<h4>Abacha $<i>10</i></h4>
+<h4 class="price-10">Abacha $<i>10</i></h4>
 </div>
 </div>
 </a>
@@ -187,9 +187,9 @@
 <div class="top-div">
   <div class="cover-div">
   <div class="img-div">
-<img src="beansp.jpg" alt="" ">
+<img src="beansp.jpg" alt="" >
 </div>
-<h4>Beans and plantains $<i>8</i></h4>
+<h4 class="price-8">Beans and plantains $<i>8</i></h4>
 </div>
 </div>
 </a>
@@ -197,9 +197,9 @@
 <div class="top-div">
   <div class="cover-div">
   <div class="img-div">
-<img src="porridge.jpg" alt="" ">
+<img src="porridge.jpg" alt="" >
 </div>
-<h4>Porridge yam $<i>9</i></h4>
+<h4 class="price-9">Porridge yam $<i>9</i></h4>
 </div>
 </div>
 </a>
