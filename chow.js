@@ -1,5 +1,8 @@
-document.getElementById('cart-price').addEventListener('click', function oga() {
+var sc = 0;  var price = 0;
+document.getElementsByClassName('price-10').addEventListeners('click', function oga() {
 
-  console.log('i dey work')
+sc+=1;
+console.log(sc);
+console.log(this.className);
+document.getElementById('cart-price').textContent = sc;
 });
-console.log(6);
